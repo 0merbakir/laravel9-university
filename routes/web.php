@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\adminPanel\HomeController as adminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,9 @@ Route::get('/home', function () {
 
 Route::view('home2', 'home.index', ['name' => 'ÖMER BAKIR']);
 
-//Route::get('home', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/', [adminController::class, 'index'])->name('admin');
 
 Route::middleware([
     'auth:sanctum',
