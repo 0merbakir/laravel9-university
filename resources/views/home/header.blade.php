@@ -1,4 +1,7 @@
-<header class="header rs-nav header-transparent">
+<div class="page-wraper">
+<div id="loading-icon-bx"></div>
+	<!-- Header Top ==== -->
+    <header class="header rs-nav header-transparent">
 		<div class="top-bar">
 			<div class="container">
 				<div class="row d-flex justify-content-between">
@@ -128,10 +131,10 @@
 							</li>
 							<li class="nav-dashboard"><a href="javascript:;">Dashboard <i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="admin/index.html">Dashboard</a></li>
+									<li><a href="/admin">Dashboard</a></li>
 									<li><a href="admin/add-listing.html">Add Listing</a></li>
 									<li><a href="admin/bookmark.html">Bookmark</a></li>
-									<li><a href="admin/courses.html">Courses</a></li>
+									<li><a href="/admin/menus">Menus</a></li>
 									<li><a href="admin/review.html">Review</a></li>
 									<li><a href="admin/teacher-profile.html">Teacher Profile</a></li>
 									<li><a href="admin/user-profile.html">User Profile</a></li>

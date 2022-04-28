@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\adminPanel\HomeController as adminController;
-
+use App\Http\Controllers\AdminPanel\HomeController as AdminController;
+use App\Http\Controllers\AdminPanel\MenuController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,11 +23,24 @@ Route::get('/home', function () {
     return view('home.index');
 });
 
-Route::view('home2', 'home.index', ['name' => 'ÖMER BAKIR']);
+// Route::view('home2', 'home.index', ['name' => 'ÖMER BAKIR']);
 
+// ***************home route
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/', [adminController::class, 'index'])->name('admin');
+//**************admin routes */
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('index');
+    //***********menu routes */
+    Route::prefix('menus')->name('menus.')->controller(MenuController::class)->group(function () {
+        Route::get('/','index')->name('index');
+        Route::get('/create','create')->name('create');
+        Route::post('/store','store')->name('store');
+        Route::get('/edit/{id}','edit')->name('dit');
+        Route::post('/update/{id}','update')->name('update');
+        Route::get('/show/{id}','show')->name('show');
+    });
+});
 
 Route::middleware([
     'auth:sanctum',
@@ -38,5 +51,3 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-
-

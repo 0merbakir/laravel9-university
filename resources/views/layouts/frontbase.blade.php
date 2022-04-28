@@ -54,18 +54,14 @@
 	<!-- REVOLUTION SLIDER END -->	
     @yield('head')
 </head>
-    <body>
+    <body id="bg">
 
     @include("home.header")
-    
-        @section('content')
-       
-        @show
- 
 
-            @yield('content')
+         @yield('content')
         
-        @include("home.footer")
+    @include("home.footer")
         @yield('foot')
+
     </body>
 </html>
