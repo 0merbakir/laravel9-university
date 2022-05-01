@@ -21,17 +21,6 @@
 						<form class="edit-profile m-b30" role="form" action="/admin/menus/update/{{$data->id}}" method="post" enctype="multipart/form-data">
 							@csrf
 							<div class="row">
-							<div class="form-group col-6">
-									<label class="col-form-label">Parent Menu</label>
-									<div>
-										<Select class="form-control select" type="text" name="Parent_id" placeholder="">
-											<option value="" disabled selected hidden>Parent Menu</option>
-											@foreach($data as $rs)
-											<option value="{{$rs->id}}">{{App\Http\Controllers\AdminPanel\MenuController::getParentsTree($rs,$rs->title)}}</option>
-											@endforeach
-										</Select>
-									</div>
-								</div>
 								<div class="form-group col-6">
 									<label class="col-form-label">title</label>
 									<div>
@@ -68,10 +57,9 @@
 									</div>
 								</div>
 								<div class="col-12">
-									<table id="item-add" style="width:100%;">
-										<div class="col-12">
-											<button type="submit" class="btn" style="background-color: #EFBB20;">Update</button>
-										</div>
+									<div class="col-12">
+										<button type="submit" class="btn" style="background-color: #EFBB20;">Update</button>
+									</div>
 								</div>
 							</div>
 						</form>

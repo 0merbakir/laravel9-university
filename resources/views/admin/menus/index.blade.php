@@ -42,9 +42,9 @@
               <td>{{$rs->description}}</td>
               <td>
                 @if($rs->image)
-                  <img src="{{Storage::url($rs->image)}}" alt="{{$rs->image}}" height="40">
+                  <img src="{{Storage::url($rs->image)}}" alt="" height="40">
                   @endif
-                </td>
+             </td>
               <td>{{$rs->status}}</td>
               <td><a type="button" href="/admin/menus/edit/{{$rs->id}}" class="btn-primary btn-sm" style="text-decoration: none;">Edit</a></td>
               <td><a type="button" href="/admin/menus/show/{{$rs->id}}" class="btn-success btn-sm" style="text-decoration: none;">Show</a></td>

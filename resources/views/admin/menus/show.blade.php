@@ -23,6 +23,10 @@
 						<td>{{$data->id}}</td>
 					</tr>
 					<tr>
+						<th style="width:40%">Parent Id :</th>
+						<td>{{$data->parent_id}}</td>
+					</tr>
+					<tr>
 						<th style="width:40%">Title :</th>
 						<td>{{$data->title}}</td>
 					</tr>
@@ -68,7 +72,7 @@
 				</div>
 				<div class="widget-inner">
 					<div class="noti-box-list">
-						<img src="{{Storage::url($data->image)}}" alt="{{$data->image}}" width="300" height="400" />
+						<img src="{{Storage::url($data->image)}}" alt="" width="300" height="400" />
 					</div>
 				</div>
 			</div>

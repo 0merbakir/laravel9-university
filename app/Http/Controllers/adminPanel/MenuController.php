@@ -8,20 +8,21 @@ use App\Models\menu;
 
 
 
+
 class MenuController extends Controller
 {
-    protected $appends= [
+    protected $appends = [
         'getParentsTree'
     ];
 
-    public static function getParentsTree($request,$title)
+    public static function getParentsTree($menu, $title)
     {
-       if($request->parent_id==0){
-           return $title;
-       }
-       $parent=menu::find($request->parent_id);
-       $title= $parent->title.'>'.$title;
-       return MenuController::getParentsTree($parent,$title);
+        if ($menu->parent_id == 0) {
+            return $title;
+        }
+        $parent = menu::find($menu->parent_id);
+        $title = $parent->title . ' > ' . $title;
+        return MenuController::getParentsTree($parent, $title);
     }
     /**
      * Display a listing of the resource.
@@ -60,8 +61,8 @@ class MenuController extends Controller
         $data->keywords = $request->keywords;
         $data->description = $request->description;
         $data->status = $request->status;
-        if($request->file('image')){
-            $data->image= $request->file('image')->store('image');
+        if ($request->file('image')) {
+            $data->image = $request->file('image')->store('images');
         }
         $data->save();
         return redirect('admin/menus');
@@ -88,7 +89,8 @@ class MenuController extends Controller
     public function edit($id)
     {
         $data = menu::find($id);
-        return view('admin.menus.edit', ['data' => $data]);
+        $datalist = menu::all();
+        return view('admin.menus.edit', ['data' => $data, 'datalist' => $datalist]);
     }
 
     /**
@@ -106,8 +108,8 @@ class MenuController extends Controller
         $data->keywords = $request->keywords;
         $data->description = $request->description;
         $data->status = $request->status;
-        if($request->file('image')){
-            $data->image= $request->file('image')->store('image');
+        if ($request->file('image')) {
+            $data->image = $request->file('image')->store('images');
         }
         $data->save();
         return redirect('admin/menus');
