@@ -4,23 +4,24 @@ namespace App\Http\Controllers\AdminPanel;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Content;
 use App\Models\Menu;
 use Illuminate\Support\Facades\Storage;
 
-class MenuController extends Controller
+class ContentController extends Controller
 {
     protected $appends = [
         'getParentsTree'
     ];
 
-    public static function getParentsTree($Menu, $title)
+    public static function getParentsTree($menu, $title)
     {
-        if ($Menu->parent_id == 0) {
+        if ($menu->parent_id == 0) {
             return $title;
         }
-        $parent = Menu::find($Menu->parent_id);
+        $parent = Content::find($menu->parent_id);
         $title = $parent->title . ' > ' . $title;
-        return MenuController::getParentsTree($parent, $title);
+        return ContentController::getParentsTree($parent, $title);
     }
     /**
      * Display a listing of the resource.
@@ -29,8 +30,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $data = Menu::all();
-        return view('admin.menus.index', ['data' => $data]);
+        $data = Content::all();
+        return view('admin.contents.index', ['data' => $data]);
     }
 
 
@@ -41,8 +42,9 @@ class MenuController extends Controller
      */
     public function create()
     {
-        $data = Menu::all();
-        return view('admin.menus.create', ['data' => $data]);
+        $data = Content::all();
+        $datalist = Menu::all();
+        return view('admin.contents.create', ['data' => $data, 'datalist' => $datalist]);
     }
 
     /**
@@ -53,9 +55,12 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        $data = new Menu();
-        $data->parent_id = $request->parent_id;
+        $data = new Content();
+        $data->user_id = $request->uder_id;
+        $data->menu_id = $request->menu_id;
         $data->title = $request->title;
+        $data->type = $request->type;
+        $data->detail = $request->detail;
         $data->keywords = $request->keywords;
         $data->description = $request->description;
         $data->status = $request->status;
@@ -63,7 +68,7 @@ class MenuController extends Controller
             $data->image = $request->file('image')->store('images');
         }
         $data->save();
-        return redirect('admin/menus');
+        return redirect('admin/contents');
     }
 
     /**
@@ -74,8 +79,8 @@ class MenuController extends Controller
      */
     public function show($id)
     {
-        $data = Menu::find($id);
-        return view('admin.menus.show', ['data' => $data]);
+        $data = Content::find($id);
+        return view('admin.contents.show', ['data' => $data]);
     }
 
     /**
@@ -86,9 +91,9 @@ class MenuController extends Controller
      */
     public function edit($id)
     {
-        $data = Menu::find($id);
+        $data = Content::find($id);
         $datalist = Menu::all();
-        return view('admin.menus.edit', ['data' => $data, 'datalist' => $datalist]);
+        return view('admin.contents.edit', ['data' => $data, 'datalist' => $datalist]);
     }
 
     /**
@@ -100,9 +105,12 @@ class MenuController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = Menu::find($id);
-        $data->parent_id = $request->parent_id;
+        $data = new Content();
+        $data->user_id = $request->uder_id;
+        $data->menu_id = $request->menu_id;
         $data->title = $request->title;
+        $data->type = $request->type;
+        $data->detail = $request->detail;
         $data->keywords = $request->keywords;
         $data->description = $request->description;
         $data->status = $request->status;
@@ -110,7 +118,7 @@ class MenuController extends Controller
             $data->image = $request->file('image')->store('images');
         }
         $data->save();
-        return redirect('admin/menus');
+        return redirect('admin/contents');
     }
 
     /**
@@ -121,10 +129,10 @@ class MenuController extends Controller
      */
     public function destroy($id)
     {
-        $data = Menu::find($id);
+        $data = Content::find($id);
         Storage::delete($data->image);
         $data->delete();
 
-        return redirect('admin/menus');
+        return redirect('admin/products');
     }
 }

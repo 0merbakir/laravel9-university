@@ -48,18 +48,25 @@
 
 		                	</li>
 		                	<li>
-							<a href="/admin/menus/create" class="ttr-material-button"><span class="ttr-label">Create Menus</span></a>
-		                	</li>
-							<li>
-		                		<a href="mailbox-read.html" class="ttr-material-button"><span class="ttr-label">Mail Read</span></a>
+							<a href="/admin/menus/create" class="ttr-material-button"><span class="ttr-label">Add Menu</span></a>
 		                	</li>
 		                </ul>
 		            </li>
 					<li>
-						<a href="/admin/content" class="ttr-material-button">
+						<a href="admin/Contents" class="ttr-material-button">
 							<span class="ttr-icon"><i class="ti-layout-accordion-list"></i></span>
 		                	<span class="ttr-label">Contents</span>
+							<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
 		                </a>
+						<ul>
+		                	<li>
+							<a href="/admin/contents/" class="ttr-material-button"><span class="ttr-label">List Contents</span></a>
+
+		                	</li>
+		                	<li>
+							<a href="/admin/contents/create" class="ttr-material-button"><span class="ttr-label">Add Content</span></a>
+		                	</li>
+		                </ul>
 		            </li>
 					<li>
 						<a href="#" class="ttr-material-button">
