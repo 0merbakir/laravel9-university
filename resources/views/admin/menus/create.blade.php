@@ -18,7 +18,7 @@
 			<div class="col-lg-12 m-b30">
 				<div class="widget-box">
 					<div class="widget-inner">
-						<form class="edit-profile m-b30" role="form" action="{{/admin/menus/store}}" method="post" enctype="multipart/form-data">
+						<form class="edit-profile m-b30" role="form" action="/admin/menus/store" method="post" enctype="multipart/form-data">
 							@csrf
 							<div class="row">
 								<div class="form-group col-6">
