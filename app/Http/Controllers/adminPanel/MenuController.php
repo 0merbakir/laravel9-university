@@ -20,7 +20,7 @@ class MenuController extends Controller
         }
         $parent = Menu::find($Menu->parent_id);
         $title = $parent->title . ' > ' . $title;
-        return MenuController::getParentsTree($parent, $title);
+        return ContentController::getParentsTree($parent, $title);
     }
     /**
      * Display a listing of the resource.

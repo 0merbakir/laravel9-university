@@ -1,6 +1,6 @@
 @extends('layouts.adminbase')
 
-@section('title', 'Show Menus: '.$data->title)
+@section('title', 'Show contents: '.$data->title)
 
 @section('content')
 <!--Main container start -->
@@ -9,7 +9,7 @@
 		<div class="db-breadcrumb">
 			<ul class="db-breadcrumb-list">
 				<li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-				<li>Show Menu</li>
+				<li>Show Content</li>
 			</ul>
 		</div>
 	</div>
@@ -19,48 +19,61 @@
 			<div class="widget-box" style="width: 100%">
 				<table class="table table-striped table-responsive" style="width: 100%">
 					<tr>
-						<th style="width:40%">#Id :</th>
+						<th style="width:20%">#Id :</th>
 						<td>{{$data->id}}</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Parent Id :</th>
-						<td>{{$data->parent_id}}</td>
+						<th style="width:20%">Menu: </th>
+						
+						<td>{{\App\Http\Controllers\AdminPanel\MenuController::getParentsTree($data->menu, $data->menu->title)}}</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Title :</th>
+						<th style="width:20%">Menu Id:</th>
+						<td>{{$data->menu_id}}</td>
+					</tr>
+					<tr>
+						<th style="width:20%">Type :</th>
+						<td>{{$data->type}}</td>
+					</tr>
+					<tr>
+						<th style="width:20%">Title :</th>
 						<td>{{$data->title}}</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Keywords :</th>
+						<th style="width:20%">Keywords :</th>
 						<td>{{$data->keywords}}</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Description :</th>
+						<th style="width:20%">Description :</th>
 						<td>{{$data->description}}</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Image :</th>
+						<th style="width:20%">Image :</th>
 						<td>{{$data->image}}
 							<!--image name-->
 						</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Status :</th>
+						<th style="width:20%">Status :</th>
 						<td>{{$data->status}}</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Created Date :</th>
+						<th style="width:20%">Details :</th>
+						<td>{!! $data->detail !!}</td>
+					</tr>
+					<tr>
+						<th style="width:20%">Created Date :</th>
 						<td>{{$data->created_at}}</td>
 					</tr>
 					<tr>
-						<th style="width:40%">Updated Date :</th>
+						<th style="width:20%">Updated Date :</th>
 						<td>{{$data->updated_at}}</td>
 					</tr>
 				</table>
 				<div class="noti-box-list" style="margin-left: 500px;">
-				<a type="button" href="/admin/menus/edit/{{$data->id}}" class="btn-primary btn-sm" style="text-decoration: none;">Edit</a>
-              <a type="button" href="/admin/menus/show/{{$data->id}}" class="btn-success btn-sm" style="text-decoration: none;">Show</a>             
-			   <a type="button" href="/admin/menus/delete/{{$data->id}}" class="btn-danger btn-sm" style="text-decoration: none;">Delete</a></td>
+				<a type="button" href="/admin/contents/edit/{{$data->id}}" class="btn-primary btn-sm" style="text-decoration: none;">Edit</a>
+              <a type="button" href="/admin/contents/show/{{$data->id}}" class="btn-success btn-sm" style="text-decoration: none;">Show</a>             
+			   <a type="button" href="/admin/contents/delete/{{$data->id}}" class="btn-danger btn-sm" style="text-decoration: none;">Delete</a></td>
 					</div>
 			</div>
 		</div>

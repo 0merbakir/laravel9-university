@@ -37,34 +37,30 @@
 		                </ul>
 		            </li>
 					<li>
-						<a href="admin/menus" class="ttr-material-button">
+						<a href="/admin/menus" class="ttr-material-button">
 							<span class="ttr-icon"><i class="ti-menu"></i></span>
-		                	<span class="ttr-label">menus</span>
-							<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+		                	<span class="ttr-label">Menus</span>
 		                </a>
-						<ul>
-		                	<li>
-							<a href="/admin/menus/" class="ttr-material-button"><span class="ttr-label">List Menus</span></a>
-
-		                	</li>
-		                	<li>
-							<a href="/admin/menus/create" class="ttr-material-button"><span class="ttr-label">Add Menu</span></a>
-		                	</li>
-		                </ul>
 		            </li>
 					<li>
-						<a href="admin/Contents" class="ttr-material-button">
-							<span class="ttr-icon"><i class="ti-layout-accordion-list"></i></span>
+						<a href="/admin/contents" class="ttr-material-button">
+							<span class="ttr-icon"><i class="ti-comment"></i></span>
 		                	<span class="ttr-label">Contents</span>
+		                </a>
+		            </li>
+					<li>
+						<a href="" class="ttr-material-button">
+							<span class="ttr-icon"><i class="ti-image"></i></span>
+		                	<span class="ttr-label">Galley</span>
 							<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
 		                </a>
 						<ul>
 		                	<li>
-							<a href="/admin/contents/" class="ttr-material-button"><span class="ttr-label">List Contents</span></a>
+							<a href="" class="ttr-material-button"><span class="ttr-label">Content Gallery</span></a>
 
 		                	</li>
 		                	<li>
-							<a href="/admin/contents/create" class="ttr-material-button"><span class="ttr-label">Add Content</span></a>
+							<a href="" class="ttr-material-button"><span class="ttr-label">?</span></a>
 		                	</li>
 		                </ul>
 		            </li>

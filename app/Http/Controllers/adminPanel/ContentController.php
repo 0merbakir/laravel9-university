@@ -14,12 +14,12 @@ class ContentController extends Controller
         'getParentsTree'
     ];
 
-    public static function getParentsTree($menu, $title)
+    public static function getParentsTree($Menu, $title)
     {
-        if ($menu->parent_id == 0) {
+        if ($Menu->parent_id == 0) {
             return $title;
         }
-        $parent = Content::find($menu->parent_id);
+        $parent = Menu::find($Menu->parent_id);
         $title = $parent->title . ' > ' . $title;
         return ContentController::getParentsTree($parent, $title);
     }
@@ -56,7 +56,6 @@ class ContentController extends Controller
     public function store(Request $request)
     {
         $data = new Content();
-        $data->user_id = $request->uder_id;
         $data->menu_id = $request->menu_id;
         $data->title = $request->title;
         $data->type = $request->type;
@@ -105,8 +104,7 @@ class ContentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = new Content();
-        $data->user_id = $request->uder_id;
+        $data = Content::find($id);
         $data->menu_id = $request->menu_id;
         $data->title = $request->title;
         $data->type = $request->type;
@@ -133,6 +131,6 @@ class ContentController extends Controller
         Storage::delete($data->image);
         $data->delete();
 
-        return redirect('admin/products');
+        return redirect('admin/contents');
     }
 }

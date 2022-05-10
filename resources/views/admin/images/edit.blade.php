@@ -26,7 +26,7 @@
 									<select name="parent_id">
 										<option value="0" selected="selected">Main Menu</option>
 										@foreach($datalist as $rs)
-										<option value="{{$rs->id}}" @if($rs->id == $data->parent_id) Selected="selected" @endif >
+										<option value="{{$rs->id}}" @if($rs->id == $data->id) Selected="selected" @endif >
 											{{ \App\Http\Controllers\AdminPanel\MenuController::getParentsTree($rs, $rs->title)}}
 										</option>
 										@endforeach

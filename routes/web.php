@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminPanel\HomeController as AdminController;
 use App\Http\Controllers\AdminPanel\MenuController;
 use App\Http\Controllers\AdminPanel\ContentController;
+use App\Http\Controllers\AdminPanel\ImageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,7 +30,7 @@ Route::get('/home', function () {
 // ***************home route
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-//**************admin routes */
+//***********************************admin routes */
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('index');
     //**********************menu routes */
@@ -51,6 +52,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/edit/{id}', 'edit')->name('edit');
         Route::post('/update/{id}', 'update')->name('update');
         Route::get('/show/{id}', 'show')->name('show');
+        Route::get('/delete/{id}', 'destroy')->name('delete');
+    });
+
+    //********************* Content Image Gallery routes */
+    Route::prefix('images')->name('images.')->controller(ImageController::class)->group(function () {
+        Route::get('/{c_id}', 'index')->name('index');
+        Route::get('/create/{c_id}', 'create')->name('create');
+        Route::post('/store/{c_id}', 'store')->name('store');
+        Route::post('/update/{c_id}/{id}', 'update')->name('update');
+        Route::get('/delete/{c_id}/{id}', 'destroy')->name('delete');
     });
 });
 

@@ -3,6 +3,9 @@
 @section('title', 'Create contents')
 
 @section('content')
+@section('head')
+<script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+@endsection
 <!--Main container start -->
 <main class="ttr-wrapper">
 	<div class="container-fluid">
@@ -24,72 +27,82 @@
 								<div class="form-group col-6">
 									<label class="col-form-label">Menu</label>
 									<select name="menu_id" id="">
-										<option value="0" selected="selected">Menu</option>
+										<option value="0" disabled selected hidden>Menus</option>
 										@foreach($datalist as $rs)
-										 <option value="{{$rs->id}}">{{ \App\Http\Controllers\AdminPanel\MenuController::getParentsTree($rs, $rs->title)}}</option>
+										<option value="{{$rs->id}}">{{ \App\Http\Controllers\AdminPanel\MenuController::getParentsTree($rs, $rs->title)}}</option>
 										@endforeach
 									</select>
 								</div>
-							<div class="form-group col-6">
-								<label class="col-form-label">title</label>
-								<div>
-									<input class="form-control" type="text" name="title" placeholder="Title">
+								<div class="form-group col-6">
+									<label class="col-form-label">title</label>
+									<div>
+										<input class="form-control" type="text" name="title" placeholder="Title">
+									</div>
 								</div>
-							</div>
-							<div class="form-group col-6">
-								<label class="col-form-label">Type</label>
-								<div>
-									<input class="form-control" type="text" name="type" placeholder="Type">
+								<div class="form-group col-6">
+									<label class="col-form-label">Type</label>
+									<div>
+										<input class="form-control" type="text" name="type" placeholder="Type">
+									</div>
 								</div>
-							</div>
-							<div class="form-group col-6">
-								<label class="col-form-label">Decription</label>
-								<div>
-									<input class="form-control" type="text" name="description" placeholder="description">
+								<div class="form-group col-6">
+									<label class="col-form-label">Decription</label>
+									<div>
+										<input class="form-control" type="text" name="description" placeholder="description">
+									</div>
 								</div>
-							</div>
-							<div class="form-group col-6">
-								<label class="col-form-label">Keywords</label>
-								<div>
-									<input class="form-control" type="text" name="keywords" placeholder="keywords">
+								<div class="form-group col-6">
+									<label class="col-form-label">Keywords</label>
+									<div>
+										<input class="form-control" type="text" name="keywords" placeholder="keywords">
+									</div>
 								</div>
-							</div>
-							<div class="form-group col-6">
-								<label class="col-form-label" for="status" placeholder="status">Status</label>
-								<select name="status">
-									<option value="" disabled selected hidden>status</option>
-									<option value="true">true</option>
-									<option value="true">false</option>
-								</select>
-							</div>
-							<div class="form-group col-6">
-								<label class="col-form-label">Image</label>
-								<div>
-									<form action="upload.php" method="post" enctype="multipart/form-data">
-										<label class="col-form-label">Select Image File</label>
-										<input class="col-form-label" type="file" name="image">
-									</form>
+								<div class="form-group col-6">
+									<label class="col-form-label" for="status" placeholder="status">Status</label>
+									<select name="status">
+										<option value="" disabled selected hidden>status</option>
+										<option value="true">true</option>
+										<option value="true">false</option>
+									</select>
 								</div>
-							</div>
-							<div class="seperator"></div>
-							<div class="form-group col-12">
-								<label class="col-form-label">Details</label>
-								<div>
-									<textarea name="detail" id="" cols="30" rows="10" class="form-control" value="" placeholder="description"></textarea>
+								<div class="form-group col-6">
+									<label class="col-form-label">Image</label>
+									<div>
+										<form action="upload.php" method="post" enctype="multipart/form-data">
+											<label class="col-form-label">Select Image File</label>
+											<input class="col-form-label" type="file" name="image">
+										</form>
+									</div>
 								</div>
-							</div>
-							<div class="col-12">
+								<div class="seperator"></div>
+								<div class="form-group col-12">
+									<label class="col-form-label">Details</label>
+									<div>
+										<textarea name="detail" class="form-control" id ="detail" value="" placeholder="Details"></textarea>
+									</div>
+									<script>
+										ClassicEditor
+											.create(document.querySelector('#detail'))
+											.then(editor => {
+												console.log(editor);
+											})
+											.catch(error => {
+												console.error(error);
+											});
+									</script>
+								</div>
 								<div class="col-12">
-									<button type="submit" class="btn" style="background-color: #EFBB20;">Save</button>
+									<div class="col-12">
+										<button type="submit" class="btn" style="background-color: #EFBB20;">Save</button>
+									</div>
 								</div>
 							</div>
+						</form>
 					</div>
-					</form>
 				</div>
 			</div>
+			<!-- Your Profile Views Chart END-->
 		</div>
-		<!-- Your Profile Views Chart END-->
-	</div>
 	</div>
 </main>
 <div class="ttr-overlay"></div>

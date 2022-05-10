@@ -4,7 +4,7 @@
 
 @section('content')
 <!--Main container start -->
-<main class="ttr-wrapper">
+<main class="ttr-wrapper ">
   <div class="container-fluid">
     <div class="db-breadcrumb">
       <h4 class="breadcrumb-title">Menus</h4>
@@ -17,13 +17,24 @@
       <div class="card-header">
         <h3 class="card-title">Menu List</h3>
       </div>
+      <div class="compose-mail" style="width: 100%;">
+        <div class="widget-card widget-bg4" style="width: 90%;">
+          <div class="wc-item">
+            <a href="/admin/menus/create" class="ttr-material-button btn-primary" style="text-decoration: none;">
+              <h4 class="wc-title" style="text-align: center;">
+                Add Menu
+              </h4>
+            </a>
+          </div>
+        </div>
+      </div>
       <!-- /.card-header -->
-      <div class="container mt-5" style="width: 75%">
-        <table id="example" class="table table-bordered table-responsive" style="width: 100%">
+      <div class="container mt-5" style="width: 80%">
+        <table id="example" class="table table-bordered table-responsive " style="width: 100%; ">
           <thead>
             <tr>
               <th scope="col"> #Id</th>
-              <th scope="col" >Main Menu</th>
+              <th scope="col">Main Menu</th>
               <th scope="col">Title</th>
               <th scope="col">Keywords</th>
               <th scope="col">Image</th>
@@ -42,9 +53,9 @@
               <td>{{$rs->keywords}}</td>
               <td>
                 @if($rs->image)
-                  <img src="{{Storage::url($rs->image)}}" alt="" height="40">
-                  @endif
-             </td>
+                <img src="{{Storage::url($rs->image)}}" alt="" height="40">
+                @endif
+              </td>
               <td>{{$rs->status}}</td>
               <td><a type="button" href="/admin/menus/edit/{{$rs->id}}" class="btn-primary btn-sm" style="text-decoration: none;">Edit</a></td>
               <td><a type="button" href="/admin/menus/show/{{$rs->id}}" class="btn-success btn-sm" style="text-decoration: none;">Show</a></td>
@@ -55,6 +66,7 @@
         </table>
       </div>
     </div>
+  </div>
 </main>
 <div class="ttr-overlay"></div>
 @endsection
