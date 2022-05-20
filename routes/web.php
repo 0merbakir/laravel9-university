@@ -27,8 +27,12 @@ Route::get('/home', function () {
 
 // Route::view('home2', 'home.index', ['name' => 'ÖMER BAKIR']);
 
-// ***************home route
+// ***************home routes
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/content/{id}', [HomeController::class, 'content'])->name('content');
+Route::get('/menucontent/{id}/{slug}', [HomeController::class, 'menucontent'])->name('menucontent');
+
+
 
 //***********************************admin routes */
 Route::prefix('admin')->name('admin.')->group(function () {

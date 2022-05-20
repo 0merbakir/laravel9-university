@@ -5,7 +5,7 @@
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<a href="index.html"><img src="assets/images/logo-white.png" alt=""/></a>
+							<a href="index.html"><img src="{{asset('assets')}}/images/logo-white.png" alt=""/></a>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
@@ -28,7 +28,7 @@
                             <h5 class="footer-title">Sign Up For A Newsletter</h5>
 							<p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge advices on job searching.</p>
                             <div class="subscribe-form m-b20">
-								<form class="subscription-form" action="http://educhamp.themetrades.com/demo/assets/script/mailchamp.php" method="post">
+								<form class="subscription-form" action="http://educhamp.themetrades.com/demo/{{asset('assets')}}/script/mailchamp.php" method="post">
 									<div class="ajax-message"></div>
 									<div class="input-group">
 										<input name="email" required="required"  class="form-control" placeholder="Your Email Address" type="email">
@@ -81,14 +81,14 @@
                         <div class="widget widget_gallery gallery-grid-4">
                             <h5 class="footer-title">Our Gallery</h5>
                             <ul class="magnific-image">
-								<li><a href="assets/images/gallery/pic1.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic1.jpg" alt=""></a></li>
-								<li><a href="assets/images/gallery/pic2.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic2.jpg" alt=""></a></li>
-								<li><a href="assets/images/gallery/pic3.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic3.jpg" alt=""></a></li>
-								<li><a href="assets/images/gallery/pic4.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic4.jpg" alt=""></a></li>
-								<li><a href="assets/images/gallery/pic5.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic5.jpg" alt=""></a></li>
-								<li><a href="assets/images/gallery/pic6.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic6.jpg" alt=""></a></li>
-								<li><a href="assets/images/gallery/pic7.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic7.jpg" alt=""></a></li>
-								<li><a href="assets/images/gallery/pic8.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic8.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic1.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic1.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic2.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic2.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic3.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic3.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic4.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic4.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic5.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic5.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic6.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic6.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic7.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic7.jpg" alt=""></a></li>
+								<li><a href="{{asset('assets')}}/images/gallery/pic8.jpg" class="magnific-anchor"><img src="{{asset('assets')}}/images/gallery/pic8.jpg" alt=""></a></li>
 							</ul>
                         </div>
                     </div>
@@ -108,34 +108,34 @@
 </div>
 
 <!-- External JavaScripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-<script src="assets/vendors/counter/waypoints-min.js"></script>
-<script src="assets/vendors/counter/counterup.min.js"></script>
-<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-<script src="assets/vendors/masonry/masonry.js"></script>
-<script src="assets/vendors/masonry/filter.js"></script>
-<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-<script src="assets/js/functions.js"></script>
-<script src="assets/js/contact.js"></script>
-<script src='assets/vendors/switcher/switcher.js'></script>
+<script src="{{asset('assets')}}/js/jquery.min.js"></script>
+<script src="{{asset('assets')}}/vendors/bootstrap/js/popper.min.js"></script>
+<script src="{{asset('assets')}}/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{asset('assets')}}/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="{{asset('assets')}}/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="{{asset('assets')}}/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="{{asset('assets')}}/vendors/counter/waypoints-min.js"></script>
+<script src="{{asset('assets')}}/vendors/counter/counterup.min.js"></script>
+<script src="{{asset('assets')}}/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="{{asset('assets')}}/vendors/masonry/masonry.js"></script>
+<script src="{{asset('assets')}}/vendors/masonry/filter.js"></script>
+<script src="{{asset('assets')}}/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="{{asset('assets')}}/js/functions.js"></script>
+<script src="{{asset('assets')}}/js/contact.js"></script>
+<script src='{{asset('assets')}}/vendors/switcher/switcher.js'></script>
 <!-- Revolution JavaScripts Files -->
-<script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="{{asset('assets')}}/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script>
 jQuery(document).ready(function() {
 	var ttrevapi;
@@ -145,7 +145,7 @@ jQuery(document).ready(function() {
 	}else{
 		ttrevapi = tpj("#rev_slider_486_1").show().revolution({
 			sliderType:"standard",
-			jsFileLocation:"assets/vendors/revolution/js/",
+			jsFileLocation:"{{asset('assets')}}/vendors/revolution/js/",
 			sliderLayout:"fullwidth",
 			dottedOverlay:"none",
 			delay:9000,

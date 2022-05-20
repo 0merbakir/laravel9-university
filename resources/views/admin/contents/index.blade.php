@@ -37,7 +37,7 @@
               <th scope="col">Menu</th>
               <th scope="col">Title</th>
               <th scope="col">Description</th>
-              <th scope="col">Image</th>
+              <th scope="col">Slider Image</th>
               <th scope="col">Image Gallery</th>
               <th scope="col">Status</th>
               <th>Edit</th>

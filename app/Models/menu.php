@@ -14,4 +14,16 @@ class Menu extends Model
     {
         return $this->hasMany(Content::class);
     }
+
+    # one to many inverse
+    public function parent()
+    {
+        return $this->belongsTo(Menu::class, 'parent_id');
+    }
+
+    # one to many
+    public function children()
+    {
+        return $this->hasMany(Menu::class, 'parent_id');
+    }
 }
