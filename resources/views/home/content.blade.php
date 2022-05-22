@@ -17,7 +17,7 @@
 		<div class="breadcrumb-row">
 			<div class="container">
 				<ul class="list-inline">
-					<li><a href="#">Home</a></li>
+					<li><a href="{{route('home')}}">Home</a></li>
 					<li>{{\App\Http\Controllers\AdminPanel\MenuController::getParentsTree($data->Menu, $data->Menu->title)}}</li>
 					<li>{{$data->title}}</li>
 				</ul>

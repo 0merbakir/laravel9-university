@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Content;
+use App\Models\Setting;
 use App\Models\Menu;
 use Illuminate\Support\Facades\DB as FacadesDB;
 
@@ -18,9 +19,11 @@ class HomeController extends Controller
 
     public function index()
     {
-        $sliderdata = Content::limit(4)->get();
+        $page = 'home';
+        $sliderdata = Content::limit(6)->get();
         $menulist = Content::limit(8)->get();
-       return view('home.index', ['sliderdata'=>$sliderdata, 'menulist'=>$menulist
+        $setting = Setting::first();
+       return view('home.index', ['sliderdata'=>$sliderdata, 'menulist'=>$menulist, 'page'=>$page, 'setting'=>$setting
     ]);
     }
 
@@ -39,6 +42,24 @@ class HomeController extends Controller
         $content = FacadesDB::table('contents')->where('menu_id', $id)->get();
 
        return view('home.menucontent', ['menu'=>$menu, 'content'=>$content
+    ]);
+    }
+
+    
+    public function about()
+    {
+
+        $setting = Setting::first();
+       return view('home.about', ['setting'=>$setting
+    ]);
+    }
+
+    
+    public function contact()
+    {
+
+        $setting = Setting::first();
+       return view('home.contact', ['setting'=>$setting
     ]);
     }
 

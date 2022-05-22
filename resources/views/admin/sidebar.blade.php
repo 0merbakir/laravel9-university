@@ -95,7 +95,7 @@
 		                </a>
 		            </li>
 					<li>
-						<a href="/admin/settings" class="ttr-material-button">
+						<a href="/admin/setting" class="ttr-material-button">
 							<span class="ttr-icon"><i class="ti-settings"></i></span>
 		                	<span class="ttr-label">Settings</span>
 		                </a>

@@ -15,7 +15,7 @@
 		<div class="db-breadcrumb">
 			<h4 class="breadcrumb-title">Edit Content: {{$data->title}}</h4>
 			<ul class="db-breadcrumb-list">
-				<li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/admin"><i class="fa fa-home"></i>Admin</a></li>
 				<li>Edit Menu</li>
 			</ul>
 		</div>
@@ -85,15 +85,15 @@
 									<div>
 										<textarea name="detail" id="detail" cols="30" rows="10" class="form-control" value="">{!! $data->detail !!}</textarea>
 										<script>
-										ClassicEditor
-											.create(document.querySelector('#detail'))
-											.then(editor => {
-												console.log(editor);
-											})
-											.catch(error => {
-												console.error(error);
-											});
-									</script>
+											ClassicEditor
+												.create(document.querySelector('#detail'))
+												.then(editor => {
+													console.log(editor);
+												})
+												.catch(error => {
+													console.error(error);
+												});
+										</script>
 									</div>
 								</div>
 								<div class="col-12">

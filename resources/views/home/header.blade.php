@@ -79,6 +79,10 @@
 								@endif
 							</li>
 							@endforeach
+							<li><a href="{{route('aboutus')}}">About<i ></i></a>
+							</li>
+							<li><a href="{{route('contact')}}">Contact<i ></i></a>
+							</li>
 						</ul>
 						<div class="nav-social-link">
 							<a href="javascript:;"><i class="fa fa-facebook"></i></a>

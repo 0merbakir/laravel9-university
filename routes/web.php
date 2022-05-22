@@ -27,8 +27,10 @@ Route::get('/home', function () {
 
 // Route::view('home2', 'home.index', ['name' => 'ÖMER BAKIR']);
 
-// ***************home routes
+// ***************home page routes
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('about', [HomeController::class, 'about'])->name('aboutus');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/content/{id}', [HomeController::class, 'content'])->name('content');
 Route::get('/menucontent/{id}/{slug}', [HomeController::class, 'menucontent'])->name('menucontent');
 
@@ -37,6 +39,11 @@ Route::get('/menucontent/{id}/{slug}', [HomeController::class, 'menucontent'])->
 //***********************************admin routes */
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('index');
+
+    //*************** General Routes*** */
+    Route::get('/setting', [AdminController::class, 'setting'])->name('setting');
+    Route::post('/setting/update', [AdminController::class, 'updateSetting'])->name('updatesetting');
+
     //**********************menu routes */
     Route::prefix('menus')->name('menus.')->controller(MenuController::class)->group(function () {
         Route::get('/', 'index')->name('index');

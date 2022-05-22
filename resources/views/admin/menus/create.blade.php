@@ -9,7 +9,7 @@
 		<div class="db-breadcrumb">
 			<h4 class="breadcrumb-title">Add Menu</h4>
 			<ul class="db-breadcrumb-list">
-				<li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/admin"><i class="fa fa-home"></i>Admin</a></li>
 				<li>Add Menu</li>
 			</ul>
 		</div>

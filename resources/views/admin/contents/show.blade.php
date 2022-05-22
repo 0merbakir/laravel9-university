@@ -8,7 +8,7 @@
 	<div class="container-fluid">
 		<div class="db-breadcrumb">
 			<ul class="db-breadcrumb-list">
-				<li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/admin"><i class="fa fa-home"></i>Admin</a></li>
 				<li>Show Content</li>
 			</ul>
 		</div>

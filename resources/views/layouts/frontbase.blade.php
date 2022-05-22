@@ -20,11 +20,14 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="{{asset('assets')}}/images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="{{asset('assets')}}/images/favicon.png" />
+	<link rel="icon" href="@yield('icon')" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="@yield('icon')" />
 
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title>@yield('title') </title>
+	<meta name="description" content="@yield('description')">
+  <meta name="keywords" content="@yield('keywords')">
+  <meta name="author" content="Omer BAKIR">
 
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
