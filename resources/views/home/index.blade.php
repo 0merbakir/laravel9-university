@@ -29,16 +29,16 @@
 
 						<!-- LAYER NR. 3 -->
 						<div class="tp-caption Newspaper-Subtitle   tp-resizeme" id="slide-100-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['210','210','210','210']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; color:#fff; font-family:rubik; font-size:18px; font-weight:400;">
-							<i>Veritas</i> 
+							<i>Veritas</i>
 						</div>
 
 						<!-- LAYER NR. 3 -->
 						<div class="tp-caption Newspaper-Subtitle   tp-resizeme" id="slide-100-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['320','320','320','290']" data-width="['800','800','700','420']" data-height="['100','100','100','120']" data-whitespace="unset" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-						Not everyone can truly succeed in everything. But success only comes with self-management and determination.
+							Not everyone can truly succeed in everything. But success only comes with self-management and determination.
 						</div>
 						<!-- LAYER NR. 4 -->
-						<div class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5" data-x="['center','center','center','center']" data-hoffset="['90','80','75','90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">READ MORE </div>
-						<div class="tp-caption Newspaper-Button rev-btn" id="slide-100-layer-6" data-x="['center','center','center','center']" data-hoffset="['-90','-80','-75','-90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">CONTACT US</div>
+						<div class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5" data-x="['center','center','center','center']" data-hoffset="['90','80','75','90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: normal;  box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px; margin-right:5px;"><p ><a href="{{route('contact')}}" style="color:#ffffff !important;">CONTACT US</a></p></div>
+						<div class="tp-caption Newspaper-Button rev-btn" id="slide-100-layer-6" data-x="['center','center','center','center']" data-hoffset="['-90','-80','-75','-90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: normal;  color:#ffffff !important; box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;"><p  ><a href="{{route('aboutus')}}" style="color:#ffffff !important;">READ MORE</a></p></div>
 					</li>
 					@endforeach
 					<!-- SLIDE  -->
@@ -105,13 +105,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 heading-bx left">
-						<h2 class="title-head">Popular <span>Menus</span></h2>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+						<h2 class="title-head">Online<span> Courses</span></h2>
+						<p>In-person, blended, and online courses</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0">
-						@foreach($menulist as $rs)
+						@foreach($courses as $rs)
 						<div class="item">
 							<div class="cours-bx">
 								<div class="action-box">
@@ -315,67 +315,30 @@
 				<div class="row">
 					<div class="col-md-12 heading-bx left">
 						<h2 class="title-head">Recent <span>News</span></h2>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+						<p>The Harvard Gazette is the official news website for Harvard University. It covers campus life and times..</p>
 					</div>
 				</div>
 				<div class="recent-news-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+					@foreach($news as $rs)
 					<div class="item">
 						<div class="recent-news">
 							<div class="action-box">
-								<img src="{{asset('assets')}}/images/blog/latest-blog/pic1.jpg" alt="">
+								<img src="{{Storage::url($rs->image)}}" alt="news image">
 							</div>
 							<div class="info-bx">
 								<ul class="media-post">
-									<li><a href="#"><i class="fa fa-calendar"></i>Jan 02 2019</a></li>
-									<li><a href="#"><i class="fa fa-user"></i>By William</a></li>
+									<li><i class="fa fa-calendar"></i>{{$rs->created_at}}</li>
+									<li><i class="fa fa-user"></i>Admin</li>
 								</ul>
-								<h5 class="post-title"><a href="blog-details.html">This Story Behind Education Will Haunt You Forever.</a></h5>
-								<p>Knowing that, you’ve optimised your pages countless amount of times, written tons.</p>
+								<h5 class="post-title"><a href="{{route('content', ['id' =>$rs->id])}}">{{$rs->description}}</a></h5>
 								<div class="post-extra">
-									<a href="#" class="btn-link">READ MORE</a>
-									<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>20 Comment</a>
+									<a href="{{route('content', ['id' =>$rs->id])}}" class="btn-link">READ MORE</a>
+									<a href="{{route('content', ['id' =>$rs->id])}}" class="comments-bx"><i class="fa fa-comments-o"></i>comments</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="item">
-						<div class="recent-news">
-							<div class="action-box">
-								<img src="{{asset('assets')}}/images/blog/latest-blog/pic2.jpg" alt="">
-							</div>
-							<div class="info-bx">
-								<ul class="media-post">
-									<li><a href="#"><i class="fa fa-calendar"></i>Feb 05 2019</a></li>
-									<li><a href="#"><i class="fa fa-user"></i>By John</a></li>
-								</ul>
-								<h5 class="post-title"><a href="blog-details.html">What Will Education Be Like In The Next 50 Years?</a></h5>
-								<p>As desperate as you are right now, you have done everything you can on your.</p>
-								<div class="post-extra">
-									<a href="#" class="btn-link">READ MORE</a>
-									<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>14 Comment</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="recent-news">
-							<div class="action-box">
-								<img src="{{asset('assets')}}/images/blog/latest-blog/pic3.jpg" alt="">
-							</div>
-							<div class="info-bx">
-								<ul class="media-post">
-									<li><a href="#"><i class="fa fa-calendar"></i>April 14 2019</a></li>
-									<li><a href="#"><i class="fa fa-user"></i>By George</a></li>
-								</ul>
-								<h5 class="post-title"><a href="blog-details.html">Master The Skills Of Education And Be.</a></h5>
-								<p>You will see in the guide all my years of valuable experience together with.</p>
-								<div class="post-extra">
-									<a href="#" class="btn-link">READ MORE</a>
-									<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>23 Comment</a>
-								</div>
-							</div>
-						</div>
-					</div>
+					@endforeach
 				</div>
 			</div>
 		</div>

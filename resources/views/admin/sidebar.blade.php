@@ -49,38 +49,10 @@
 		                </a>
 		            </li>
 					<li>
-						<a href="" class="ttr-material-button">
-							<span class="ttr-icon"><i class="ti-image"></i></span>
-		                	<span class="ttr-label">Galley</span>
-							<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
-		                </a>
-						<ul>
-		                	<li>
-							<a href="" class="ttr-material-button"><span class="ttr-label">Content Gallery</span></a>
-
-		                	</li>
-		                	<li>
-							<a href="" class="ttr-material-button"><span class="ttr-label">?</span></a>
-		                	</li>
-		                </ul>
-		            </li>
-					<li>
-						<a href="#" class="ttr-material-button">
+						<a href="/admin/messages" class="ttr-material-button">
 							<span class="ttr-icon"><i class="ti-email"></i></span>
-		                	<span class="ttr-label">Mailbox</span>
-		                	<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+		                	<span class="ttr-label">Messages</span>
 		                </a>
-		                <ul>
-		                	<li>
-		                		<a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Mail Box</span></a>
-		                	</li>
-		                	<li>
-		                		<a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Compose</span></a>
-		                	</li>
-							<li>
-		                		<a href="mailbox-read.html" class="ttr-material-button"><span class="ttr-label">Mail Read</span></a>
-		                	</li>
-		                </ul>
 		            </li>
 					<li>
 						<a href="/admin/comments" class="ttr-material-button">

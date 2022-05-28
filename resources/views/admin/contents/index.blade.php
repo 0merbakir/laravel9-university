@@ -1,7 +1,6 @@
 @extends('layouts.adminbase')
 
 @section('title', 'Contents')
-
 @section('content')
 <!--Main container start -->
 <main class="ttr-wrapper">
@@ -29,7 +28,7 @@
         </div>
       </div>
       <!-- /.card-header -->
-      <div class="container mt-5" style="width: 85%">
+      <div class="container mt-5" style="width: 100%">
         <table id="example" class="table table-bordered table-responsive" style="width: 100%">
           <thead>
             <tr>
@@ -37,7 +36,7 @@
               <th scope="col">Menu</th>
               <th scope="col">Title</th>
               <th scope="col">Description</th>
-              <th scope="col">Slider Image</th>
+              <th scope="col">Type</th>
               <th scope="col">Image Gallery</th>
               <th scope="col">Status</th>
               <th>Edit</th>
@@ -52,11 +51,7 @@
               <td>{{\App\Http\Controllers\AdminPanel\MenuController::getParentsTree($rs->menu, $rs->menu->title)}}</td>
               <td>{{$rs->title}}</td>
               <td>{{$rs->description}}</td>
-              <td>
-                @if($rs->image)
-                <img src="{{Storage::url($rs->image)}}" alt="" height="40">
-                @endif
-              </td>
+              <td>{{$rs->type}}</td>
               <td>
                 <div class="r1">
                   <a href="{{route('admin.images.index', ['c_id'=>$rs->id])}}" onclick="return !window.open(this.href, ' ', top=50, left=100, width=1100, height=700) ">

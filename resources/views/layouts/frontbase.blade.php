@@ -20,7 +20,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="@yield('icon')" type="image/x-icon" />
+	<link rel="icon" href="@yield('icon')" type="@yield('icon')" />
 	<link rel="shortcut icon" type="image/x-icon" href="@yield('icon')" />
 
 	<!-- PAGE TITLE HERE ============================================= -->

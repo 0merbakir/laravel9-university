@@ -28,7 +28,7 @@
                             <h5 class="footer-title">Sign Up For A Newsletter</h5>
 							<p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge advices on job searching.</p>
                             <div class="subscribe-form m-b20">
-								<form class="subscription-form" action="http://educhamp.themetrades.com/demo/{{asset('assets')}}/script/mailchamp.php" method="post">
+								<form class="subscription-form" action="/storemessage" method="post">
 									<div class="ajax-message"></div>
 									<div class="input-group">
 										<input name="email" required="required"  class="form-control" placeholder="Your Email Address" type="email">
@@ -106,7 +106,8 @@
     <!-- Footer END ==== -->
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
-
+<button class="back-to-top fa fa-chevron-up" ></button>
+</div>
 <!-- External JavaScripts -->
 <script src="{{asset('assets')}}/js/jquery.min.js"></script>
 <script src="{{asset('assets')}}/vendors/bootstrap/js/popper.min.js"></script>
@@ -122,7 +123,6 @@
 <script src="{{asset('assets')}}/vendors/owl-carousel/owl.carousel.js"></script>
 <script src="{{asset('assets')}}/js/functions.js"></script>
 <script src="{{asset('assets')}}/js/contact.js"></script>
-<script src='{{asset('assets')}}/vendors/switcher/switcher.js'></script>
 <!-- Revolution JavaScripts Files -->
 <script src="{{asset('assets')}}/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script src="{{asset('assets')}}/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>

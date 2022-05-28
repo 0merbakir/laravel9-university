@@ -8,7 +8,7 @@
 					<div class="topbar-left">
 						<ul>
 							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
-							<li><a href="javascript:;"><i class="fa fa-envelope-o"></i>Support@website.com</a></li>
+							<li><a href=""><i class="fa fa-envelope-o"></i>Support@website.com</a></li>
 						</ul>
 					</div>
 					<div class="topbar-right">
@@ -31,7 +31,7 @@
 				<div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index.html"><img src="{{asset('assets')}}/images/logo-white.png" alt="" style="margin-right:2px ;"></a>
+						<a href="{{route('home')}}"><img src="{{asset('assets')}}/images/logo-white.png" alt="" style="margin-right:2px ;"></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
 					<button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +43,10 @@
 					<div class="secondary-menu">
 						<div class="secondary-inner">
 							<ul>
-								<li><a href="javascript:;" class="btn-link"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="javascript:;" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="javascript:;" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="{{$setting->facebook}}" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="{{$setting->twitter}}" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="{{$setting->linkedin}}" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="{{$setting->instagram}}" class="btn-link"><i class="fa fa-instagram"></i></a></li>
 								<!-- Search Button ==== -->
 								<li class="search-btn"><button id="quik-search-btn" type="button" class="btn-link"><i class="fa fa-search"></i></button></li>
 							</ul>
@@ -73,21 +74,24 @@
 							@foreach($mainMenus as $rs)
 							<li><a href="{{route('menucontent', ['id'=> $rs->id, 'slug'=>$rs->title])}}">{{$rs->title}}<i class="fa fa-chevron-down"></i></a>
 								@if(count($rs->children))
-
+								<ul class="sub-menu">
 								@include('home.menutree', ['children'=> $rs->children])
-
+								</ul>
 								@endif
 							</li>
 							@endforeach
-							<li><a href="{{route('aboutus')}}">About<i ></i></a>
+							<li><a href="{{route('aboutus')}}">About<i></i></a>
 							</li>
-							<li><a href="{{route('contact')}}">Contact<i ></i></a>
+							<li><a href="{{route('faq')}}">FAQ<i></i></a>
+							</li>
+							<li><a href="{{route('contact')}}">Contact<i></i></a>
 							</li>
 						</ul>
 						<div class="nav-social-link">
-							<a href="javascript:;"><i class="fa fa-facebook"></i></a>
-							<a href="javascript:;"><i class="fa fa-google-plus"></i></a>
-							<a href="javascript:;"><i class="fa fa-linkedin"></i></a>
+							<a href="{{$setting->facebook}}"><i class="fa fa-facebook"></i></a>
+							<a href="{{$setting->instagram}}"><i class="fa fa-instagram"></i></a>
+							<a href="{{$setting->linkedin}}"><i class="fa fa-linkedin"></i></a>
+							<a href="{{$setting->twitter}}"><i class="fa fa-twitter"></i></a>
 						</div>
 					</div>
 					<!-- Navigation Menu END ==== -->

@@ -1,6 +1,7 @@
 @extends('layouts.frontbase')
 
 @section('title', $menu->title)
+@section('icon', Storage::url($setting->icon))
 
 @section('content')
 <!-- Content -->
@@ -17,13 +18,17 @@
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{route('home')}}">Home</a></li>
                 @if($menu->title == 'Home')
                 @else
                 <li>{{$menu->title}} </li>
                 @endif
             </ul>
         </div>
+    </div>
+    <div class="info-bx text-center">
+        <h5>{{$menu->title}}</h5>
+        <span>{{$menu->description}}</span>
     </div>
     <!-- Breadcrumb row END -->
     <!-- inner page banner END -->
