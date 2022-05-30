@@ -2,11 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminPanel\MenuController;
 use App\Http\Controllers\AdminPanel\HomeController as AdminController;
 use App\Http\Controllers\AdminPanel\FaqController;
 use App\Http\Controllers\AdminPanel\ContentController;
 use App\Http\Controllers\AdminPanel\CommentController;
 use App\Http\Controllers\AdminPanel\ImageController;
+use App\Http\Controllers\AdminPanel\MenuController as AdminPanelMenuController;
 use App\Http\Controllers\AdminPanel\MessageController;
 
 /*
@@ -114,7 +116,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         'verified'
     ])->group(function () {
         Route::get('/dashboard', function () {
-            return view('dashboard');
+            return view('/dashboard');
         })->name('dashboard');
     });
 });

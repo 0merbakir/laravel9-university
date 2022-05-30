@@ -86,7 +86,7 @@
 									</div>
 									<div class="clear" id="comment-list">
 										<div class="comments-area" id="comments">
-											<h2 class="comments-title">8 Comments</h2>
+											<h2 class="comments-title">{{$data->comment->count('id')}} Comments</h2>
 											<div class="clearfix m-b20">
 												<!-- comment list END -->
 												@foreach($comment as $rs)
