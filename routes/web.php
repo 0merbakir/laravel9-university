@@ -41,6 +41,7 @@ Route::get('/menucontent/{id}/{slug}', [HomeController::class, 'menucontent'])->
 Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
 Route::post('/storecomment', [HomeController::class, 'storecomment'])->name('storecomment');
 Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
+Route::view('/userlogin', 'home.login')->name('login');
 
 
 
