@@ -17,12 +17,12 @@ class HomeController extends Controller
 
     public static function mainMenuList()
     {
-        return Menu::where('parent_id', '=',0)->with('children')->get();
+        return Menu::where('parent_id', '=', 0)->with('children')->get();
     }
 
 
     public function index()
-       
+
     {
         $page = 'home';
         $news = FacadesDB::table('contents')->where('type', 'news')->get();
@@ -30,8 +30,9 @@ class HomeController extends Controller
         $sliderdata = Menu::limit(6)->get();
         $menulist = Content::limit(8)->get();
         $setting = Setting::first();
-       return view('home.index', ['sliderdata'=>$sliderdata, 'menulist'=>$menulist, 'page'=>$page, 'setting'=>$setting, 'news'=>$news, 'courses'=>$courses
-    ]);
+        return view('home.index', [
+            'sliderdata' => $sliderdata, 'menulist' => $menulist, 'page' => $page, 'setting' => $setting, 'news' => $news, 'courses' => $courses
+        ]);
     }
 
     public function content($id)
@@ -40,8 +41,9 @@ class HomeController extends Controller
         $data = Content::find($id);
         $setting = Setting::first();
         $image = FacadesDB::table('images')->where('content_id', $id)->get();
-       return view('home.content', ['data'=>$data, 'image'=>$image,'setting'=>$setting, 'comment'=>$comment
-    ]);
+        return view('home.content', [
+            'data' => $data, 'image' => $image, 'setting' => $setting, 'comment' => $comment
+        ]);
     }
 
     public function menucontent($id)
@@ -50,35 +52,39 @@ class HomeController extends Controller
         $menu = Menu::find($id);
         $setting = Setting::first();
         $content = FacadesDB::table('contents')->where('menu_id', $id)->get();
-       return view('home.menucontent', ['menu'=>$menu, 'content'=>$content,'setting'=>$setting
-    ]);
+        return view('home.menucontent', [
+            'menu' => $menu, 'content' => $content, 'setting' => $setting
+        ]);
     }
-    
 
-    
+
+
     public function about()
     {
 
         $setting = Setting::first();
-       return view('home.about', ['setting'=>$setting
-    ]);
+        return view('home.about', [
+            'setting' => $setting
+        ]);
     }
 
-    
     public function contact()
     {
 
         $setting = Setting::first();
-       return view('home.contact', ['setting'=>$setting
-    ]);
+        return view('home.contact', [
+            'setting' => $setting
+        ]);
     }
+
 
     public function faq()
     {
         $setting = Setting::first();
         $faqlist = Faq::all();
-       return view('home.faq', ['faqlist'=>$faqlist, 'setting'=>$setting
-    ]);
+        return view('home.faq', [
+            'faqlist' => $faqlist, 'setting' => $setting
+        ]);
     }
 
     public function storemessage(Request $request)
@@ -91,7 +97,7 @@ class HomeController extends Controller
         $data->message = $request->input('message');
         $data->ip = request()->ip();
         $data->save();
-       return redirect()->route('contact')->with('info', 'Your message have been sent, Thank you.');
+        return redirect()->route('contact')->with('info', 'Your message have been sent, Thank you.');
     }
 
     public function storecomment(Request $request)
@@ -102,9 +108,36 @@ class HomeController extends Controller
         $data->comment = $request->input('comment');
         $data->ip = request()->ip();
         $data->save();
-       return redirect()->route('content',['id'=>$request->input('content_id')])->with('success', 'Your comment have been sent, Thank you.');
+        return redirect()->route('content', ['id' => $request->input('content_id')])->with('success', 'Your comment have been sent, Thank you.');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 
 
+    public function loginadmincheck(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+ 
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+ 
+            return redirect()->intended('/admin');
+        }
+ 
+        return back()->withErrors([
+            'error' => 'The provided credentials do not match our records.',
+        ])->onlyInput('email');
+    }
 
 }

@@ -40,6 +40,12 @@
 				<!-- header right menu start -->
 				<ul class="ttr-header-navigation">
 					<li>
+						@auth
+						<a href="#" class="ttr-material-button ">{{Auth::user()->name}}</i></a>
+						<a href="/logoutuser" class="ttr-material-button ">Logout</i></a>
+						@endauth
+					</li>
+					<li>
 						<a href="#" class="ttr-material-button ttr-search-toggle"><i class="fa fa-search"></i></a>
 					</li>
 					<li>

@@ -22,19 +22,10 @@
 		                </a>
 		            </li>
 					<li>
-						<a href="#" class="ttr-material-button">
+						<a href="/admin/users" class="ttr-material-button">
 							<span class="ttr-icon"><i class="ti-user"></i></span>
-		                	<span class="ttr-label">Profiles</span>
-		                	<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+		                	<span class="ttr-label">Users</span>
 		                </a>
-		                <ul>
-		                	<li>
-		                		<a href="user-profile.html" class="ttr-material-button"><span class="ttr-label">My profile</span></a>
-		                	</li>
-		                	<li>
-		                		<a href="teacher-profile.html" class="ttr-material-button"><span class="ttr-label">User profiles</span></a>
-		                	</li>
-		                </ul>
 		            </li>
 					<li>
 						<a href="/admin/menus" class="ttr-material-button">

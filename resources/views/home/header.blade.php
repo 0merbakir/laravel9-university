@@ -7,8 +7,8 @@
 				<div class="row d-flex justify-content-between">
 					<div class="topbar-left">
 						<ul>
-							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
-							<li><a href=""><i class="fa fa-envelope-o"></i>Support@website.com</a></li>
+							<li><a href="/contact"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+							
 						</ul>
 					</div>
 					<div class="topbar-right">
@@ -19,8 +19,16 @@
 									<option data-icon="flag flag-us">English US</option>
 								</select>
 							</li>
-							<li><a href="login.html">Login</a></li>
-							<li><a href="register.html">Register</a></li>
+							@guest
+							<li><a href="/loginuser" class="btn-link">Login</a></li>
+							<li><a href="/registeruser" class="btn-link">Register</a></li>
+							@endguest
+							<li>
+							@auth
+							<li><a href="/userpanel" class="btn-link">My Account |</a> {{Auth::user()->name}}</li>
+							<li><a href="/logoutuser" class="btn-link">Logout</a></li>
+							@endauth
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -43,10 +51,10 @@
 					<div class="secondary-menu">
 						<div class="secondary-inner">
 							<ul>
-							<li><a href="{{$setting->facebook}}" class="btn-link"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="{{$setting->twitter}}" class="btn-link"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="{{$setting->linkedin}}" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="{{$setting->instagram}}" class="btn-link"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="{{$setting->facebook}}" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="{{$setting->twitter}}" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="{{$setting->linkedin}}" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="{{$setting->instagram}}" class="btn-link"><i class="fa fa-instagram"></i></a></li>
 								<!-- Search Button ==== -->
 								<li class="search-btn"><button id="quik-search-btn" type="button" class="btn-link"><i class="fa fa-search"></i></button></li>
 							</ul>
@@ -75,7 +83,7 @@
 							<li><a href="{{route('menucontent', ['id'=> $rs->id, 'slug'=>$rs->title])}}">{{$rs->title}}<i class="fa fa-chevron-down"></i></a>
 								@if(count($rs->children))
 								<ul class="sub-menu">
-								@include('home.menutree', ['children'=> $rs->children])
+									@include('home.menutree', ['children'=> $rs->children])
 								</ul>
 								@endif
 							</li>
