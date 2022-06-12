@@ -7,14 +7,6 @@
 						<div class="pt-logo mr-auto">
 							<a href="index.html"><img width="500" height="600" src="{{asset('assets')}}/images/logo-white.png" alt="" /></a>
 						</div>
-						<div class="pt-social-link">
-							<ul class="list-inline m-a0">
-								<li><a href="{{$setting->facebook}}" class="btn-link"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="{{$setting->twitter}}" class="btn-link"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="{{$setting->linkedin}}" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="{{$setting->instagram}}" class="btn-link"><i class="fa fa-instagram"></i></a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -56,16 +48,6 @@
 									</ul>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
-						<div class="widget widget_gallery gallery-grid-4">
-							<h5 class="footer-title">Our Gallery</h5>
-							<ul class="magnific-image">
-								@foreach($gallery as $rs)
-								<li><a href="{{Storage::url($rs->image)}}" class="magnific-anchor"><img src="{{Storage::url($rs->image)}}" alt=""></a></li>
-								@endforeach
-							</ul>
 						</div>
 					</div>
 				</div>

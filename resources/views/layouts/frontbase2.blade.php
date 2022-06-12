@@ -62,7 +62,7 @@
 
 	@yield('content')
 
-	@include("home.footer")
+	@include("home.footer2")
 	@yield('foot')
 
 </body>

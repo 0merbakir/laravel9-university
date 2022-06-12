@@ -26,12 +26,23 @@ class HomeController extends Controller
     {
         $page = 'home';
         $news = FacadesDB::table('contents')->where('type', 'news')->get();
+        $events = FacadesDB::table('contents')->where('type', 'event')->get();
         $courses = FacadesDB::table('contents')->where('menu_id', 11)->get();
+        $announcements = FacadesDB::table('contents')->where('menu_id', 18)->limit(5)->get();
+        $gallery = FacadesDB::table('images')->where('content_id', 2)->get();
         $sliderdata = Menu::limit(6)->get();
         $menulist = Content::limit(8)->get();
         $setting = Setting::first();
         return view('home.index', [
-            'sliderdata' => $sliderdata, 'menulist' => $menulist, 'page' => $page, 'setting' => $setting, 'news' => $news, 'courses' => $courses
+            'sliderdata' => $sliderdata,
+            'menulist' => $menulist,
+            'page' => $page,
+            'setting' => $setting,
+            'news' => $news,
+            'courses' => $courses,
+            'events'=>$events,
+            'gallery'=>$gallery,
+            'announcements'=>$announcements
         ]);
     }
 
@@ -40,9 +51,10 @@ class HomeController extends Controller
         $comment = Comment::where('content_id', $id)->get();
         $data = Content::find($id);
         $setting = Setting::first();
+        $gallery = FacadesDB::table('images')->where('content_id', 2)->get();
         $image = FacadesDB::table('images')->where('content_id', $id)->get();
         return view('home.content', [
-            'data' => $data, 'image' => $image, 'setting' => $setting, 'comment' => $comment
+            'data' => $data, 'image' => $image, 'setting' => $setting, 'comment' => $comment,'gallery'=>$gallery
         ]);
     }
 
@@ -51,9 +63,10 @@ class HomeController extends Controller
 
         $menu = Menu::find($id);
         $setting = Setting::first();
+        $gallery = FacadesDB::table('images')->where('content_id', 2)->get();
         $content = FacadesDB::table('contents')->where('menu_id', $id)->get();
         return view('home.menucontent', [
-            'menu' => $menu, 'content' => $content, 'setting' => $setting
+            'menu' => $menu, 'content' => $content, 'setting' => $setting,'gallery'=>$gallery
         ]);
     }
 
@@ -63,8 +76,9 @@ class HomeController extends Controller
     {
 
         $setting = Setting::first();
+        $gallery = FacadesDB::table('images')->where('content_id', 2)->get();
         return view('home.about', [
-            'setting' => $setting
+            'setting' => $setting, 'gallery'=>$gallery
         ]);
     }
 
@@ -72,8 +86,9 @@ class HomeController extends Controller
     {
 
         $setting = Setting::first();
+        $gallery = FacadesDB::table('images')->where('content_id', 2)->get();
         return view('home.contact', [
-            'setting' => $setting
+            'setting' => $setting, 'gallery'=>$gallery
         ]);
     }
 
@@ -82,8 +97,9 @@ class HomeController extends Controller
     {
         $setting = Setting::first();
         $faqlist = Faq::all();
+        $gallery = FacadesDB::table('images')->where('content_id', 2)->get();
         return view('home.faq', [
-            'faqlist' => $faqlist, 'setting' => $setting
+            'faqlist' => $faqlist, 'setting' => $setting, 'gallery'=>$gallery
         ]);
     }
 
@@ -128,16 +144,15 @@ class HomeController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
- 
+
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
- 
+
             return redirect()->intended('/admin');
         }
- 
+
         return back()->withErrors([
             'error' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
     }
-
 }

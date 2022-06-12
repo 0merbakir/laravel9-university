@@ -19,8 +19,8 @@
 			<div class="container">
 				<ul class="list-inline">
 					<li><a href="{{route('home')}}">Home</a></li>
-					<li>{{\App\Http\Controllers\AdminPanel\MenuController::getParentsTree($data->Menu, $data->Menu->title)}}</li>
-					<li>{{$data->title}}</li>
+					<a href="{{route('menucontent', ['id'=> $data->menu->id, 'slug'=>$data->menu->title])}}"><li>{{\App\Http\Controllers\AdminPanel\MenuController::getParentsTree($data->Menu, $data->Menu->title)}}</li>
+					<a href="{{route('content', ['id'=> $data->id])}}"><li>{{$data->title}}</li></a>
 				</ul>
 			</div>
 		</div>

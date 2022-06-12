@@ -135,18 +135,10 @@ Route::middleware('auth')->group(function () {
             Route::get('/', 'index')->name('index');
             Route::get('/addrole/{id}', 'addrole')->name('addrole');
             Route::get('/show/{id}', 'show')->name('show');
-            Route::get('/update/{id}', 'update')->name('update');
             Route::get('/destroyrole/{uid}/{rid}', 'destroyrole')->name('destroyrole');
         });
     });
 });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+
+

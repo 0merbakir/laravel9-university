@@ -21,7 +21,7 @@
                 <li><a href="{{route('home')}}">Home</a></li>
                 @if($menu->title == 'Home')
                 @else
-                <li>{{$menu->title}} </li>
+                <a href="{{route('menucontent', ['id'=> $menu->id, 'slug'=>$menu->title])}}"><li>{{$menu->title}} </li></a>
                 @endif
             </ul>
         </div>

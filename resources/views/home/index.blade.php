@@ -37,8 +37,12 @@
 							Not everyone can truly succeed in everything. But success only comes with self-management and determination.
 						</div>
 						<!-- LAYER NR. 4 -->
-						<div class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5" data-x="['center','center','center','center']" data-hoffset="['90','80','75','90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: normal;  box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px; margin-right:5px;"><p ><a href="{{route('contact')}}" style="color:#ffffff !important;">CONTACT US</a></p></div>
-						<div class="tp-caption Newspaper-Button rev-btn" id="slide-100-layer-6" data-x="['center','center','center','center']" data-hoffset="['-90','-80','-75','-90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: normal;  color:#ffffff !important; box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;"><p  ><a href="{{route('aboutus')}}" style="color:#ffffff !important;">READ MORE</a></p></div>
+						<div class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5" data-x="['center','center','center','center']" data-hoffset="['90','80','75','90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: normal;  box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px; margin-right:5px;">
+							<p><a href="{{route('contact')}}" style="color:#ffffff !important;">CONTACT US</a></p>
+						</div>
+						<div class="tp-caption Newspaper-Button rev-btn" id="slide-100-layer-6" data-x="['center','center','center','center']" data-hoffset="['-90','-80','-75','-90']" data-y="['top','top','top','top']" data-voffset="['400','400','400','420']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]" style="z-index: 8; white-space: normal;  color:#ffffff !important; box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">
+							<p><a href="{{route('aboutus')}}" style="color:#ffffff !important;">READ MORE</a></p>
+						</div>
 					</li>
 					@endforeach
 					<!-- SLIDE  -->
@@ -62,8 +66,8 @@
 								<div class="feature-box-sm radius bg-white">
 									<i class="fa fa-bank text-primary"></i>
 								</div>
-								<h4><a href="#">Best Industry Leaders</a></h4>
-								<a href="#" class="btn radius-xl">View More</a>
+								<h4><a href="#">Learn More About Harvard</a></h4>
+								<a href="/about" class="btn radius-xl">View More</a>
 							</div>
 						</div>
 					</div>
@@ -76,8 +80,8 @@
 								<div class="feature-box-sm radius bg-white">
 									<i class="fa fa-book text-primary"></i>
 								</div>
-								<h4><a href="#">Learn Courses Online</a></h4>
-								<a href="#" class="btn radius-xl">View More</a>
+								<h4><a href="#">Frequently asked Questions</a></h4>
+								<a href="/faq" class="btn radius-xl">View More</a>
 							</div>
 						</div>
 					</div>
@@ -90,8 +94,8 @@
 								<div class="feature-box-sm radius bg-white">
 									<i class="fa fa-file-text-o text-primary"></i>
 								</div>
-								<h4><a href="#">Book Library & Store</a></h4>
-								<a href="#" class="btn radius-xl">View More</a>
+								<h4><a href="#">Contact Us</a></h4>
+								<a href="/contact" class="btn radius-xl">View More</a>
 							</div>
 						</div>
 					</div>
@@ -130,55 +134,6 @@
 			</div>
 		</div>
 		<!-- Popular Courses END -->
-
-		<!-- Form -->
-		<div class="section-area section-sp1 ovpr-dark bg-fix online-cours" style="background-image:url(assets/images/background/bg1.jpg);">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center text-white">
-						<h2>Online Courses To Learn</h2>
-						<h5>Own Your Feature Learning New Skills Online</h5>
-						<form class="cours-search">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="What do you want to learn today?	">
-								<div class="input-group-append">
-									<button class="btn" type="submit">Search</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="mw800 m-auto">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="cours-search-bx m-b30">
-								<div class="icon-box">
-									<h3><i class="ti-user"></i><span class="counter">5</span>M</h3>
-								</div>
-								<span class="cours-search-text">Over 5 million student</span>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="cours-search-bx m-b30">
-								<div class="icon-box">
-									<h3><i class="ti-book"></i><span class="counter">30</span>K</h3>
-								</div>
-								<span class="cours-search-text">30,000 Courses.</span>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-12">
-							<div class="cours-search-bx m-b30">
-								<div class="icon-box">
-									<h3><i class="ti-layout-list-post"></i><span class="counter">20</span>K</h3>
-								</div>
-								<span class="cours-search-text">Learn Anythink Online.</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Form END -->
 		<div class="section-area section-sp2">
 			<div class="container">
 				<div class="row">
@@ -189,79 +144,29 @@
 				</div>
 				<div class="row">
 					<div class="upcoming-event-carousel owl-carousel owl-btn-center-lr owl-btn-1 col-12 p-lr0  m-b30">
+						@foreach($events as $rs)
 						<div class="item">
 							<div class="event-bx">
 								<div class="action-box">
-									<img src="{{asset('assets')}}/images/event/pic4.jpg" alt="">
+									<img src="{{Storage::url($rs->image)}}" alt="">
 								</div>
 								<div class="info-bx d-flex">
-									<div>
-										<div class="event-time">
-											<div class="event-date">29</div>
-											<div class="event-month">October</div>
-										</div>
-									</div>
 									<div class="event-info">
-										<h4 class="event-title"><a href="#">Education Autumn Tour 2019</a></h4>
+										<h4 class="event-title"><a href="#">{{$rs->title}}</a></h4>
 										<ul class="media-post">
-											<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-											<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
+											<li><a href="#"><i class="fa fa-clock-o"></i> {{$rs->created_at}}/a></li>
+											<li><a href="#"><i class="fa fa-map-marker"></i></a></li>
 										</ul>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+										<p>{{$rs->description}}</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="item">
-							<div class="event-bx">
-								<div class="action-box">
-									<img src="{{asset('assets')}}/images/event/pic3.jpg" alt="">
-								</div>
-								<div class="info-bx d-flex">
-									<div>
-										<div class="event-time">
-											<div class="event-date">29</div>
-											<div class="event-month">October</div>
-										</div>
-									</div>
-									<div class="event-info">
-										<h4 class="event-title"><a href="#">Education Autumn Tour 2019</a></h4>
-										<ul class="media-post">
-											<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-											<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
-										</ul>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="event-bx">
-								<div class="action-box">
-									<img src="{{asset('assets')}}/images/event/pic2.jpg" alt="">
-								</div>
-								<div class="info-bx d-flex">
-									<div>
-										<div class="event-time">
-											<div class="event-date">29</div>
-											<div class="event-month">October</div>
-										</div>
-									</div>
-									<div class="event-info">
-										<h4 class="event-title"><a href="#">Education Autumn Tour 2019</a></h4>
-										<ul class="media-post">
-											<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-											<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
-										</ul>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-									</div>
-								</div>
-							</div>
-						</div>
+						@endforeach
 					</div>
 				</div>
 				<div class="text-center">
-					<a href="#" class="btn">View All Event</a>
+					<a href="{{route('content', ['id' =>$rs->id])}}" class="btn">View All Event</a>
 				</div>
 			</div>
 		</div>
@@ -271,41 +176,35 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-white heading-bx left">
-						<h2 class="title-head text-uppercase">what people <span>say</span></h2>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+						<h2 class="title-head text-uppercase">{{$setting->title}} <span>Announcements</span></h2>
 					</div>
 				</div>
 				<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+					@foreach($announcements as $rs)
 					<div class="item">
 						<div class="testimonial-bx">
 							<div class="testimonial-thumb">
-								<img src="{{asset('assets')}}/images/testimonials/pic1.jpg" alt="">
+								<img src="{{Storage::url($rs->image)}}" alt="">
 							</div>
 							<div class="testimonial-info">
-								<h5 class="name">Peter Packer</h5>
-								<p>-Art Director</p>
+								<a href="{{route('content', ['id' =>$rs->id])}}">
+									<h5 class="name">{{{$rs->title}}}</h5>
+								</a>
 							</div>
 							<div class="testimonial-content">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+								<a href="{{route('content', ['id' =>$rs->id])}}">
+									<p>{{{$rs->description}}}</p>
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="item">
-						<div class="testimonial-bx">
-							<div class="testimonial-thumb">
-								<img src="{{asset('assets')}}/images/testimonials/pic2.jpg" alt="">
-							</div>
-							<div class="testimonial-info">
-								<h5 class="name">Peter Packer</h5>
-								<p>-Art Director</p>
-							</div>
-							<div class="testimonial-content">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
-							</div>
-						</div>
-					</div>
+					@endforeach
 				</div>
+				<div class="text-center">
+				<a href="{{route('content', ['id' =>$rs->id])}}" class="btn">View All Announcements</a>
 			</div>
+			</div>
+
 		</div>
 		<!-- Testimonials END -->
 
