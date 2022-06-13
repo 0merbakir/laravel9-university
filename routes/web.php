@@ -135,6 +135,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/', 'index')->name('index');
             Route::get('/addrole/{id}', 'addrole')->name('addrole');
             Route::get('/show/{id}', 'show')->name('show');
+            Route::get('/destroy/{id}', 'destroy')->name('destroy');
             Route::get('/destroyrole/{uid}/{rid}', 'destroyrole')->name('destroyrole');
         });
     });

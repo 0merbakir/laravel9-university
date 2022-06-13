@@ -10,9 +10,9 @@
 			<!--logo start -->
 			<div class="ttr-logo-box">
 				<div>
-					<a href="index.html" class="ttr-logo">
-						<img alt="" class="ttr-logo-mobile" src="{{asset('assets/admin')}}/images/logo-mobile.png" width="30" height="30">
-						<img alt="" class="ttr-logo-desktop" src="{{asset('assets/admin')}}/images/logo-white.png" width="160" height="27">
+					<a href="/admin" class="ttr-logo">
+						<img alt="/admin" class="ttr-logo-mobile" src="{{asset('assets/admin')}}/images/logo-mobile.png" width="30" height="30">
+						<img alt="/admin" class="ttr-logo-desktop" src="{{asset('assets/admin')}}/images/logo-white.png" width="160" height="27">
 					</a>
 				</div>
 			</div>
@@ -41,11 +41,11 @@
 					</li>
 					<li>
 						@auth
-						<a href="#" class="ttr-material-button ">{{Auth::user()->name}}</i></a>
+						<a href="#" class="ttr-material ">{{Auth::user()->name}}</i></a>
 						@endauth
 					</li>
 					<li class="ttr-hide-on-mobile">
-						<a href="#" class="ttr-material-button"><i class="ti-layout-grid3-alt"></i></a>
+						<a href="#" class="ttr-material"><i class="ti-layout-grid3-alt"></i></a>
 					</li>
 				</ul>
 				<!-- header right menu end -->

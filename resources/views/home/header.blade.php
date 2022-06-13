@@ -56,7 +56,7 @@
 								<li><a href="{{$setting->linkedin}}" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
 								<li><a href="{{$setting->instagram}}" class="btn-link"><i class="fa fa-instagram"></i></a></li>
 								<!-- Search Button ==== -->
-								<li class="search-btn"><button id="quik-search-btn" type="button" class="btn-link"><i class="fa fa-search"></i></button></li>
+								
 							</ul>
 						</div>
 					</div>

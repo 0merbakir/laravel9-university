@@ -1,4 +1,4 @@
-@extends('layouts.frontbase')
+@extends('layouts.frontbase2')
 
 @section('title', $setting->title)
 @section('description', $setting->description)

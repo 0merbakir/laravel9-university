@@ -123,7 +123,7 @@
 									<a href="{{route('content', ['id' =>$rs->id])}}" class="btn">Read More</a>
 								</div>
 								<div class="info-bx text-center">
-									<h5><a href="#">{{$rs->title}}</a></h5>
+									<h5><a href="{{route('content', ['id' =>$rs->id])}}">{{$rs->title}}</a></h5>
 									<span>{{$rs->description}}</span>
 								</div>
 							</div>
@@ -152,7 +152,7 @@
 								</div>
 								<div class="info-bx d-flex">
 									<div class="event-info">
-										<h4 class="event-title"><a href="#">{{$rs->title}}</a></h4>
+										<h4 class="event-title"><a href="{{route('content', ['id' =>$rs->id])}}">{{$rs->title}}</a></h4>
 										<ul class="media-post">
 											<li><a href="#"><i class="fa fa-clock-o"></i> {{$rs->created_at}}/a></li>
 											<li><a href="#"><i class="fa fa-map-marker"></i></a></li>
@@ -188,7 +188,7 @@
 							</div>
 							<div class="testimonial-info">
 								<a href="{{route('content', ['id' =>$rs->id])}}">
-									<h5 class="name">{{{$rs->title}}}</h5>
+									<h5 class="name"><a href="{{route('content', ['id' =>$rs->id])}}">{{$rs->title}}</a></h5>
 								</a>
 							</div>
 							<div class="testimonial-content">
@@ -201,7 +201,7 @@
 					@endforeach
 				</div>
 				<div class="text-center">
-				<a href="{{route('content', ['id' =>$rs->id])}}" class="btn">View All Announcements</a>
+				<a href="{{route('content', ['id' =>$rs->id])}}" class="btn">View All Announcement</a>
 			</div>
 			</div>
 

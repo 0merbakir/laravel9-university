@@ -44,7 +44,7 @@
 
               <td><a type="button" href="{{route('admin.users.show', ['id'=>$rs->id])}}" class="btn-success btn-sm" style="text-decoration: none;" onclick="return !window.open(this.href, ' ', top=50, left=100, width=1100, height=700) ">Show</td>
 
-              <td><a type="button" href="/admin/users/delete/{{$rs->id}}" class="btn-danger btn-sm" style="text-decoration: none;">Delete</a></td>
+              <td><a type="button" href="/admin/users/destroy/{{$rs->id}}" class="btn-danger btn-sm" style="text-decoration: none;">Delete</a></td>
             </tr>
             @endforeach
           </tbody>
